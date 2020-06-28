@@ -1,4 +1,4 @@
-var socket = io.connect("https://real-time-data-monitoring.herokuapp.com/");
+var socket = io.connect("http://localhost");
 let temperature = [];
 let humidity = [];
 var config = {

@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "node server.js",
-    "start-simulator": "node ./arduino/MQTTSimulator.js"
+    "start-simulator": "node ./arduino/MQTTSimulator.js",
+    "start": "concurrently \"npm run start-server\" \"npm run start-simulator\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.2.0",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "mosca": "^2.8.3",
